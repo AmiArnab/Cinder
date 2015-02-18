@@ -24,6 +24,7 @@
 #include "cinder/app/cocoa/CinderView.h"
 #include "cinder/app/Renderer.h"
 #include "cinder/app/TouchEvent.h"
+#include "cinder/app/PlatformCocoa.h"
 #include "cinder/cocoa/CinderCocoa.h"
 
 #import <Cocoa/Cocoa.h>
@@ -144,7 +145,8 @@ using namespace cinder::app;
 		if( ! options->isExclusive() )
 			[dict setObject:[NSNumber numberWithUnsignedInteger:( NSApplicationPresentationHideMenuBar | NSApplicationPresentationHideDock )] forKey:NSFullScreenModeApplicationPresentationOptions];
 
-        NSScreen *screen = ( options->getDisplay() ? options->getDisplay()->getNsScreen() : [[self window] screen] );
+		cinder::DisplayMac *displayMac = dynamic_cast<cinder::DisplayMac*>( options->getDisplay().get() );
+        NSScreen *screen = ( displayMac ? displayMac->getNsScreen() : [[self window] screen] );
         [self enterFullScreenMode:screen withOptions:dict];
     }
     else {

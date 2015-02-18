@@ -23,8 +23,9 @@
 
 #import <Cocoa/Cocoa.h>
 
-#include "cinder/app/cocoa/AppCocoaView.h"
-#include "cinder/app/cocoa/CinderView.h"
+#include "cinder/app/AppCocoaView.h"
+#include "cinder/app/CinderView.h"
+#include "cinder/app/PlatformCocoa.h"
 #include "cinder/Log.h"
 
 using namespace std;
@@ -266,7 +267,7 @@ using namespace cinder::app;
 	if( win ) {
 		NSScreen *screen = [win screen];
 		if( screen )
-			return cinder::Display::findFromNsScreen( screen );
+			return cinder::DisplayMac::findFromNsScreen( screen );
 	}
 	
 	return cinder::DisplayRef();
