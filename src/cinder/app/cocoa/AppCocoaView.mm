@@ -23,9 +23,9 @@
 
 #import <Cocoa/Cocoa.h>
 
-#include "cinder/app/AppCocoaView.h"
-#include "cinder/app/CinderView.h"
-#include "cinder/app/PlatformCocoa.h"
+#include "cinder/app/cocoa/AppCocoaView.h"
+#include "cinder/app/cocoa/CinderView.h"
+#include "cinder/app/cocoa/PlatformCocoa.h"
 #include "cinder/Log.h"
 
 using namespace std;

@@ -29,7 +29,7 @@ using namespace std;
 #include "cinder/app/Platform.h"
 
 #if defined( CINDER_COCOA_TOUCH )
-	#include "cinder/app/PlatformCocoa.h"
+	#include "cinder/app/cocoa/PlatformCocoa.h"
 	#include <UIKit/UIKit.h>
 #elif defined( CINDER_MSW )
 	#include <Windows.h>

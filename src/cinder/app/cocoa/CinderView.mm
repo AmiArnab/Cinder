@@ -24,7 +24,7 @@
 #include "cinder/app/cocoa/CinderView.h"
 #include "cinder/app/Renderer.h"
 #include "cinder/app/TouchEvent.h"
-#include "cinder/app/PlatformCocoa.h"
+#include "cinder/app/cocoa/PlatformCocoa.h"
 #include "cinder/cocoa/CinderCocoa.h"
 
 #import <Cocoa/Cocoa.h>

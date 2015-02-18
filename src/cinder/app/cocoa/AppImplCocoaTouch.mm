@@ -20,8 +20,8 @@
  POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import "cinder/app/AppImplCocoaTouch.h"
-#include "cinder/app/PlatformCocoa.h"
+#import "cinder/app/cocoa/AppImplCocoaTouch.h"
+#include "cinder/app/cocoa/PlatformCocoa.h"
 
 using namespace cinder;
 using namespace cinder::app;

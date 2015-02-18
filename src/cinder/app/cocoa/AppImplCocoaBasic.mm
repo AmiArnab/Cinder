@@ -24,7 +24,7 @@
 #include "cinder/app/cocoa/AppImplCocoaBasic.h"
 #include "cinder/app/Renderer.h"
 #include "cinder/app/Window.h"
-#include "cinder/app/PlatformCocoa.h"
+#include "cinder/app/cocoa/PlatformCocoa.h"
 #import "cinder/cocoa/CinderCocoa.h"
 
 #include <memory>
